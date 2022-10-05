@@ -1,6 +1,285 @@
-h1 {
-  border: 2xp #eee solid;
-  color: brown;
-  text-align: center;
-  padding: 10px;
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 1;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: "Montserrat", sans-serif;
+  color: #000000;
+}
+
+body {
+  background: #78c6eb;
+  font-size: 14px;
+  line-height: 22px;
+  color: #ffffff;
+}
+
+.bold {
+  font-weight: 700;
+  font-size: 20px;
+  padding-left: 50px;
+  color: #fafafa;
+}
+
+.bold1 {
+    font-weight: 700;
+    font-size: 20px;
+    padding-left: 114px;
+    color: #fafafa;
+}
+
+.bold2 {
+    font-weight: 700;
+    font-size: 20px;
+    padding-left: -10px;
+    color: #0b3747;
+}
+
+.bold3 {
+    font-weight: 700;
+    font-size: 20px;
+    padding-left: -10px;
+    color: #0b3747;
+}
+
+.bold4 {
+    font-weight: 700;
+    font-size: 20px;
+    padding-left: -10px;
+    color: #0b3747;
+}
+
+
+.date {
+    color: #000000;
+}
+.semi-bold {
+  font-weight: 500;
+  font-size: 16px;
+  color: #000000;
+}
+
+.cvdata {
+  width: 800px;
+  height: auto;
+  display: flex;
+  margin: 50px auto;
+}
+
+.cvdata .cvdata_left {
+  width: 339px;
+  background: #0b3747;
+}
+
+.regular {
+    padding: 0 108px;
+    color: #fafafa;
+}
+
+.img {
+width: 100%;
+height: 280px;
+}
+
+.cvdata .cvdata_left .cvdata_profile {
+  width: 100%;
+  height: 280px;
+}
+
+.cvdata .cvdata_left .cvdata_profile img {
+  width: 100%;
+  height: 100%;
+}
+
+.cvdata .cvdata_left .cvdata_cover {
+  padding: 0 25px;
+}
+
+.cvdata .title {
+  margin-bottom: 20px;
+}
+
+.cvdata .cvdata_left .yourname {
+  color: #fff;
+}
+
+.cvdata .cvdata_left .student {
+  color: #b1eaff;
+}
+
+.cvdata .cvdata_item {
+  padding: 25px 0;
+
+  border-bottom: 2px solid #b1eaff;
+}
+
+.cvdata .cvdata_left .cvdata_item:last-child,
+.cvdata .cvdata_right .cvdata_item:last-child {
+  border-bottom: 0px;
+}
+
+.cvdata .cvdata_left ul li {
+  display: flex;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+.cvdata .cvdata_left ul li:last-child {
+  margin-bottom: 0;
+}
+
+.cvdata .cvdata_left ul li .icon {
+  width: 35px;
+  height: 35px;
+  background: #fff;
+  color: #0bb5f4;
+  border-radius: 50%;
+  margin-right: 15px;
+  font-size: 16px;
+  position: relative;
+}
+
+.cvdata .icon i,
+.cvdata .cvdata_right .cvdata_cvdata ul li i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.cvdata .cvdata_left ul li .data {
+  color: #b1eaff;
+}
+
+.skill_per {
+       color: #fafafa;
+}
+
+.cvdata .cvdata_left .cvdata_skills ul li {
+  display: flex;
+  margin-bottom: 10px;
+  color: #b1eaff;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cvdata .cvdata_left .cvdata_skills ul li .skill_name {
+  width: 25%;
+  color: #fafafa;
+}
+
+.cvdata .cvdata_left .cvdata_skills ul li .skill_progress {
+  width: 60%;
+  margin: 0 5px;
+  height: 5px;
+  background: #009fd9;
+  position: relative;
+}
+
+.cvdata .cvdata_left .cvdata_skills ul li .skill_per {
+  width: 15%;
+}
+
+.cvdata .cvdata_left .cvdata_skills ul li .skill_progress span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: #fff;
+}
+
+.cvdata .cvdata_left .cvdata_social .semi-bold {
+  color: #fff;
+  margin-bottom: 3px;
+}
+
+.cvdata .cvdata_right {
+  width: 520px;
+  background: #fff;
+  padding: 25px;
+}
+
+.cvdata .cvdata_right .bold {
+  color: #0bb5f4;
+}
+
+.cvdata .cvdata_right .cvdata_work ul,
+.cvdata .cvdata_right .cvdata_education ul {
+  padding-left: 40px;
+  overflow: hidden;
+}
+
+.cvdata .cvdata_right ul li {
+  position: relative;
+}
+
+.cvdata .cvdata_right ul li .date {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.cvdata .cvdata_right ul li .info {
+  margin-bottom: 20px;
+}
+
+.cvdata .cvdata_right ul li:last-child .info {
+  margin-bottom: 0;
+}
+
+.cvdata .cvdata_right .cvdata_work ul li:before,
+.cvdata .cvdata_right .cvdata_education ul li:before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -25px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  border: 2px solid #0bb5f4;
+}
+
+.cvdata .cvdata_right .cvdata_work ul li:after,
+.cvdata .cvdata_right .cvdata_education ul li:after {
+  content: "";
+  position: absolute;
+  top: 14px;
+  left: -21px;
+  width: 2px;
+  height: 115px;
+  background: #0bb5f4;
+}
+
+.cvdata .cvdata_right .cvdata_hobby ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cvdata .cvdata_right .cvdata_hobby ul li {
+  width: 80px;
+  height: 80px;
+  border: 2px solid #0bb5f4;
+  border-radius: 50%;
+  position: relative;
+  color: #0bb5f4;
+}
+
+.cvdata .cvdata_right .cvdata_hobby ul li i {
+  font-size: 30px;
+}
+
+.cvdata .cvdata_right .cvdata_hobby ul li:before {
+  content: "";
+  position: absolute;
+  top: 40px;
+  right: -52px;
+  width: 50px;
+  height: 2px;
+  background: #0bb5f4;
+}
+
+.cvdata .cvdata_right .cvdata_hobby ul li:last-child:before {
+  display: none;
 }
